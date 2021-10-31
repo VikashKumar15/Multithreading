@@ -9,8 +9,10 @@ package multithreadingDemo1;
 //	}
 //}
 
+//In case your MyTask class already extends some other class then you need to use implement runnable
+//multiple inheritance is not supported n java.
 
-//Now my class IS-A thread
+//Now MyTasks IS-A thread
 class MyTask extends Thread{
 	
 	@Override
@@ -20,6 +22,7 @@ class MyTask extends Thread{
 		}
 	}
 }
+
 
 public class MultiThreadingTest2 {
 	//Main method represents main thread
